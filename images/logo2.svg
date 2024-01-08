@@ -1,0 +1,23 @@
+<svg version="1.1" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500"><rect width="100%" height="100%" fill="#000000" fill-opacity="1"/><svg viewBox="319.8902 430 361.4666 81.2469" width="333" height="74.84845819779753" x="83.5px" y="212.5758px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none"><defs></defs><style>.background-str {stroke:#000000;stroke-opacity:0.93;}.companyName {fill:#FFFFFF;fill-opacity:1;}.companyName-floo {flood-color:#FFFFFF;flood-opacity:1;}</style><defs>
+      <filter
+        x="319.8902"
+        y="430"
+        width="361.4666"
+        height="81.2469"
+        id="Q-iYOAdpak"
+        filterUnits="userSpaceOnUse"
+        primitiveUnits="userSpaceOnUse"
+        color-interpolation-filters="sRGB">
+        
+    <feGaussianBlur in="SourceGraphic" stdDeviation="0"/>
+    <feOffset dx="1.246900283825677" dy="1.246900283825677" result="YTbu60FjbBy"/>
+    <feFlood flood-color="#FFFFFF" flood-opacity="1" in="YTbu60FjbBy" />
+    <feComposite  in2="YTbu60FjbBy" operator="in" result="Ey-ooeJ0nHJ"/><feMerge result="a93XF9Vgi4yO"><feMergeNode in="Ey-ooeJ0nHJ" /><feMergeNode in="SourceGraphic" /></feMerge>
+      </filter></defs><g filter="url(#Q-iYOAdpak)"><g opacity="1" transform="rotate(0 319.8902 430)">
+<svg width="360.2197" height="80" x="319.8902" y="430" version="1.1" preserveAspectRatio="none" viewBox="3.2 -30 135.08 30">
+  <g transform="matrix(1 0 0 1 0 0)" class="companyName"><defs><path id="id-D6z1nYkh6" d="M9.68-25.44L9.68-3.20L12.48-3.20L12.48 0L3.20 0L3.20-3.20L6-3.20L6-26.80L3.20-26.80L3.20-30L11.52-30L23.20-4.52L23.20-26.80L20.40-26.80L20.40-30L29.68-30L29.68-26.80L26.88-26.80L26.88 0L21.36 0L9.68-25.44Z M35.28 0L35.28-3.20L38.48-3.20L38.48-26.80L35.28-26.80L35.28-30L45.36-30L45.36-26.80L42.16-26.80L42.16-3.20L45.36-3.20L45.36 0L35.28 0Z M74.12-3.20L74.12 0L65.64 0L65.64-3.20L67.96-3.20L61.48-13.40L57.84-13.40L57.84-3.20L60.64-3.20L60.64 0L51.36 0L51.36-3.20L54.16-3.20L54.16-26.80L51.36-26.80L51.36-30L60.64-30L60.64-26.80L57.84-26.80L57.84-16.60L61.20-16.60L67.60-26.80L65.24-26.80L65.24-30L73.72-30L73.72-26.80L71.72-26.80L64.44-15.24L72.08-3.20L74.12-3.20Z M77.72 0L77.72-3.20L80.92-3.20L80.92-26.80L77.72-26.80L77.72-30L87.80-30L87.80-26.80L84.60-26.80L84.60-3.20L87.80-3.20L87.80 0L77.72 0Z M108.04-3.20L108.04 0L96.36 0L96.36-3.20L100.36-3.20L100.36-26.80L94.44-26.80L94.44-22.16L91.40-22.16L91.40-30L113-30L113-22.16L109.96-22.16L109.96-26.80L104.04-26.80L104.04-3.20L108.04-3.20Z M120.40-26.80L120.40-30L131.08-30L131.08-26.80L129.24-26.80L136.28-3.20L138.28-3.20L138.28 0L129.80 0L129.80-3.20L132.60-3.20L130.76-9.36L120.72-9.36L118.88-3.20L121.68-3.20L121.68 0L113.20 0L113.20-3.20L115.20-3.20L122.24-26.80L120.40-26.80ZM129.80-12.56L125.72-26.20L121.68-12.56L129.80-12.56Z"/></defs>
+  <clipPath id="id-D6z1nYkh6-clip"><use xlink:href="#id-D6z1nYkh6" /></clipPath>
+  <g clip-path="url(#id-D6z1nYkh6-clip)"><use xlink:href="#id-D6z1nYkh6" class="background-str" style="stroke-width:1.25;"/></g>
+  </g>
+</svg>
+</g></g></svg></svg>
