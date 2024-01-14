@@ -87,8 +87,9 @@ nav{
   }
 
   .about-col-1 img{
-    width: 100%;
+    width: 80%;
     border-radius: 15px;
+    margin-left: 120px;
     
    
   }
