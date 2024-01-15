@@ -103,3 +103,13 @@ nav{
   font-weight: 600;
   color: #fff;
 }
+
+
+.about-col-2 p {
+  color: white;
+  font-size: 17px;
+  margin-bottom: 10px;
+  max-width: 650px;
+}
+
+
