@@ -97,3 +97,9 @@ nav{
   flex-basis: 60%;
 
 }
+
+.sub-title{
+  font-size: 60px;
+  font-weight: 600;
+  color: #fff;
+}
