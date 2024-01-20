@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
      <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
      <script src="https://kit.fontawesome.com/fae62c5b42.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -23,7 +24,7 @@
         </nav>
         <div class="header-text">
             <h1><span>Nikita Clark</span></h1>
-            <p>Junior Software Developer</p>
+            <p> Full-Stack Junior Software Developer</p>
             
         </div>
     </div>
@@ -43,10 +44,10 @@
                
                <p>I discovered my passion for software development at the age of 12. I appreciate the freedom it offers and the fact that it is both technical and artistic.</p>
                
-               <p>Despite facing hardships, such as moving to the US with no language skills in 2017, becoming a foster child, and being unable to attend a good high school due to financial difficulties, I persevered. I graduated at the top of my class, gained admission to Northeastern, and proved myself as a capable developer with strong work ethics and the ability to produce quality code within tight deadlines.</p>
+               <p>Despite facing hardships, such as moving to the US with no language skills in 2017, becoming a foster child, and being unable to attend a good high school due to financial difficulties, I persevered. I graduated at the top of my class, gained admission to Northeastern University, and started proving myself as a capable developer with strong work ethics and the ability to produce quality code within tight deadlines.</p>
                
-               <p>In this portfolio, I will delve deep into my experiences, projects, and hobbies, providing you with a comprehensive understanding of who I am as both a developer and a person.</p>
-
+               <p>In this portfolio, I will delve deep into my experiences, projects, skills, and hobbies, providing you with a comprehensive understanding of who I am as both a developer and a person.</p>
+               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" style="width: 100px; float: right;">
                <div class="tab-titles">
                 <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                 <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -54,9 +55,10 @@
                </div>
                <div class="tab-contents active-tab" id="skills">
                 <ul>
-                    <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
-                    <li><span>Web Development</span><br>Web app Development</li>
-                    <li><span>App Development</span><br>Building Android/IOS apps</li>
+                    <li><span>UI&UX</span><br>Designing Web/App Interfaces</li>
+                    <li><span>Web Development</span><br>Designing and Launching Web Applications</li>
+                    <li><span>App Development</span><br>Building Front/Back End for Android/IOS apps</li>
+                    
                 </ul>
                </div>
                <div class="tab-contents" id="experience">
@@ -70,9 +72,12 @@
                <div class="tab-contents" id="education">
                 <ul>
                     <li><span>Sep 2021 - May 2025</span><br> Candidate for Bachelor of Science Degree in Computer Science at Northeastern University</li>
+                    
                 </ul>
                </div>
                
+            
+          
             </div>
         </div>
     </div>
@@ -85,25 +90,42 @@
             <div>
                 <i class="fa-solid fa-code"></i>
                 <h2>Web Design</h2>
-                <p>what I do</p>
-                <a href="#"> Learn more</a>
+                <p style="font-size: 16px;">I offer end-to-end website development services including design, functionality implementation, content creation and basic SEO, testing, website deployment, and post-launch support, encompassing monitoring, updates, security measures, and ongoing maintenance.</p>
+
             </div>
             <div>
                 <i class="fa-solid fa-crop"></i>
                 <h2>App Development</h2>
-                <p>what I do</p>
-                <a href="#"> Learn more</a>
+               <p style="font-size: 16px;">I provide comprehensive app development services covering conceptualization, platform selection, meticulous design, front-end and back-end implementation, rigorous testing, deployment to major app stores, and post-launch support. This encompasses continuous monitoring, timely updates, security measures, and ongoing maintenance, ensuring a seamless and impactful mobile experience.</p>
             </div>
             <div>
                 <i class="fa-brands fa-app-store"></i>
                 <h2>Software Development</h2>
-                <p>what I do</p>
-                <a href="#"> Learn more</a>
+                <p style="font-size: 16px;">I am also capable of comprehensive software development, emphasizing algorithm design, database architecture, and other intricacies of hardcore computing. My skills cover the entire software development lifecycle, from conceptualization to rigorous algorithm implementation, database optimization, testing, deployment, and ongoing maintenance. This includes a strong focus on algorithmic efficiency, robust database management, and implementing cutting-edge solutions for demanding computational challenges.</p>
+
             </div>
         </div>
     </div>
 </div>
 
+  <!------------------------portfolio--------------------->
+  <div id="portfolio">
+    <div class="container">                                                                                                                                                                                                             
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                
+                <img src="images/algo.png">
+            </div>
+            <div class="work">
+                <img src="images/web.png">
+            </div>
+            <div class="work">
+                <img src="images/algo.png">
+            </div>
+         </div>
+     </div>
+</div>
 
 
 
@@ -119,9 +141,12 @@
             tabcontent.classList.remove("active-tab");
         }
         event.currentTarget.classList.add("active-link")
-        document.getElementById(tabname).classList.add("active-tab");
+        document.getElementById(tabname).classList.add("active-tab")
     }
-</script>
+
+  
+    
+    </script>
 
 </body>
 </html>
