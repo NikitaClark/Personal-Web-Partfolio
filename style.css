@@ -104,13 +104,24 @@ nav{
   color: #fff;
 }
 
-
 .about-col-2 p {
   color: white;
   font-size: 17px;
   margin-bottom: 10px;
   max-width: 950px;
 }
+
+
+.image-container img {
+  max-width: 50px; /* Set a maximum width for smaller images */
+  max-height: 50px; /* Set a maximum height for smaller images */
+  margin-right: 15px; /* Add right margin to create horizontal space between images */
+  margin-bottom: 16px; /* Add bottom margin to create vertical space between images */
+}
+
+
+
+
 
 .tab-titles{
   display: flex;
