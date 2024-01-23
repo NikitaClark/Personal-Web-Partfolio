@@ -77,7 +77,8 @@ nav{
 /* -----------about--------------- */
 #about{
   padding: 80px 0;
-  color: #ababab;
+  color: #ffffff;
+  font-size: 17px;
 }
 .row{
   display: flex;
