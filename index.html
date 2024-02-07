@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylev2.css?version=8">
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
      <script src="https://kit.fontawesome.com/fae62c5b42.js" crossorigin="anonymous"></script>
 </head>
@@ -167,63 +167,257 @@
 
 
   <!------------------------------------experiances------------------------------------>
-  <div id="experiances">
+<div id="experiences">
     <div class="container">
         <h1 class="sub-title">My Experiences</h1>
         <div class="row">
-            <div class="pic">
-                <img src="images/tufts.png">
+            <div class="pic1">
+                <img src="images/Tufts.png">
             </div>
             <div class="descriptionTufts">
-            <h2>Computer Technician Intern</h2>
-            <br>
-                <p>• Developed the majority of the information management website, employing HTML5, CSS3, and JavaScript for front-end development.<br>
-                    • Architected an intuitive user interface and a database schema using SQL, ensuring seamless storage, retrieval, and organization of multifaceted equipment data across the hospital. <br>
-                    • Implemented React to enable dynamic functionalities, optimizing the cataloging, tracking, and resource allocation of equipment assets.<br>
-                    • Collaborated with cross-functional teams, engineering and business units to gather comprehensive requirements and validate that the developed models precisely aligned with business needs and specifications.<br>
-                    • Demonstrated expertise in software engineering methodologies, utilizing agile practices and continuous integration techniques, ensuring iterative development and swift adaptation to evolving project requirements.  </p>
-             </div>       
+                <h2>Computer Technician Intern</h2>
+                <br>
+                <p>• Successfully addressed over 50 technical challenges across the hospital, ranging from personal computers to critical medical equipment, resulting in an increase in operational efficiency and garnering 5-star reviews for the IT department. <br>
+• Led the installation and maintenance of equipment in a research department, ensuring its continual functionality and relevance during the internship period, contributing to the improvement in research productivity and ensuring 100% uptime.<br>
+• Facilitated communication across departments using the ticketing system, Kayako, to promptly address issues and arrange replacements as needed, leading to a 32% reduction in issue resolution time and enhancing overall collaboration.<br>
+• Maintained the great condition of hospital equipment through careful maintenance and regular updates, resulting in a 10% decrease in maintenance costs in 3 month of my work and receiving commendations for equipment reliability from hospital staff.<br>
+            </div>
         </div>
     </div>
 </div>
 
-<div id="experiances">
+<script>
+    var experiencesSection = document.getElementById('experiences');
+    var pic1 = experiencesSection.querySelector('.pic1');
+
+    function slideIn1() {
+        pic1.classList.add('slide');
+    }
+
+    function slideOut1() {
+        pic1.classList.remove('slide');
+    }
+
+    window.addEventListener('scroll', function() {
+        if (isInViewport(experiencesSection)) {
+            slideIn1();
+        } else {
+            slideOut1();
+        }
+    });
+
+    // Function to check if an element is in viewport
+    function isInViewport(element) {
+       
+        var rect = element.getBoundingClientRect();
+        return (
+            rect.bottom <= (window.innerHeight + 100 || document.documentElement.clientHeight)
+        );
+    }
+</script>
+
+<style>
+    .pic1 {
+        transform: translateX(-150%);
+        transition: transform 0.5s ease;
+    }
+
+    .slide {
+        transform: translateX(0);
+    }
+</style>
+
+<div id="experiences2">
     <div class="container">
         <div class="row">
             <div class="descriptionTufts">
                 <h2>Software Delivery Engineer Co-Op</h2>
                 <br>
-                 <p>• In Progress<br>
-                    • In Progress <br>
-                    • In Progress<br>
-                    • In Progress<br>
-                    • In Progress </p>
+                <p>• In Progress<br>
+                • In Progress <br>
+                • In Progress<br>
+                • In Progress<br>
+                • In Progress </p>
             </div>
-            <div class="pic">
+            <div class="pic2">
                 <img src="images/mlm.png">
             </div>
         </div>
     </div>
 </div>
 
-<div id="experiances">
+<script>
+    var experiences2Section = document.getElementById('experiences2');
+    var pic2 = experiences2Section.querySelector('.pic2');
+
+    function slideIn2() {
+        pic2.classList.add('fade-in-slide');
+    }
+
+    function slideOut2() {
+        pic2.classList.remove('fade-in-slide');
+    }
+
+    window.addEventListener('scroll', function() {
+        if (isInViewport(experiences2Section)) {
+            slideIn2();
+        } else {
+            slideOut2();
+        }
+    });
+
+    // Function to check if an element is in viewport
+    function isInViewport(element, offset) {
+        offset = offset || 0; // Set default value for offset
+        var rect = element.getBoundingClientRect();
+        return (
+            rect.top >= -offset &&
+            rect.bottom <= (window.innerHeight + offset || document.documentElement.clientHeight + offset)
+        );
+    }
+</script>
+
+<style>
+    .pic2 {
+        opacity: 0;
+        transform: translateX(100%);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .fade-in-slide {
+        opacity: 1;
+        transform: translateX(0);
+    }
+</style>
+
+
+
+
+<div id="experiences3">
     <div class="container">
         <div class="row">
-            <div class="pic">
+            <div class="pic3">
                 <img src="images/fit.png">
             </div>
             <div class="descriptionTufts">
-            <h2>Lead Software Engineer</h2>
-            <br>
+                <h2>Lead Software Engineer</h2>
+                <br>
                 <p>• Designed the first version of the app: After given a set of instructions on the functionalities of the future app, I designed an UML and mapped out the initial version of the app according to the MVC principals. <br>
                     • Developed the basic functionalities: Employing Android Studio interface with Java and XML, I created 4 layouts that consisted of a log in page/brand name, questioner, workout split page, and YouTube Video of the exercises.<br>
                     • Created Data Set with Java: Utilized Java to create a data set within the app which consisted of all the available exercises on all the muscle groups and marked with the appropriate level in order for the AI to determine which split is the best. <br>
                     • Leveraged ChatGPT API for personalized workout splits: Employing the ChatGPT API, I collected user parameters via a questionnaire and utilized a premade template with personalized adjustments. Upon receiving the response, I displayed the custom workout split tailored to each user.<br>
                     • Integrated YouTube API for exercise video display: Utilized the YouTube API to embed exercise videos within the app alongside the workout split. This integration provided users with visual demonstrations of recommended workouts, significantly enhancing their engagement and overall app experience.<br>
-             </div>       
+            </div>
         </div>
     </div>
 </div>
+
+<script>
+    var experiences3Section = document.getElementById('experiences3');
+    var pic3 = experiences3Section.querySelector('.pic3');
+
+    function slideIn3() {
+        pic3.classList.add('fade-in-slide-left');
+    }
+
+    function slideOut3() {
+        pic3.classList.remove('fade-in-slide-left');
+    }
+
+    window.addEventListener('scroll', function() {
+        if (isInViewport(experiences3Section)) {
+            slideIn3();
+        } else {
+            slideOut3();
+        }
+    });
+
+    // Function to check if an element is in viewport
+    function isInViewport(element, offset) {
+        offset = offset || 0; // Set default value for offset
+        var rect = element.getBoundingClientRect();
+        return (
+            rect.top >= -offset &&
+            rect.bottom <= (window.innerHeight + offset || document.documentElement.clientHeight + offset)
+        );
+    }
+</script>
+
+<style>
+    .pic3 {
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .fade-in-slide-left {
+        opacity: 1;
+        transform: translateX(0);
+    }
+</style>
+
+<!------------------------------------hobbies------------------------------------>
+
+<div id="hobbies">
+    <div class="container">
+        <h1 class="sub-title">Hobbies</h1>
+        <div class="hobbies-list">
+            <div>
+                <i class="fa-solid fa-motorcycle"></i>
+                <h2>E-Bike Engineering</h2>
+                <div class="bikepic1">
+                <img src="images/bike1.jpg">
+            </div>
+            <p style="font-size: 16px;">I became really obsessed with this one. It all started with converting my small commuter bike into a 42V 2000W ebike, which was meant to get me from A to B. However, I lost my mind when I stumbled upon Alibaba ebikes that were beautiful in performance and aesthetics.
+
+                I was drawn to the idea of a simple and budget-friendly design that could replace a car, allowing for comfortable commuting over long distances with minimal carbon emissions. I even started an Instagram page offering to convert regular bikes into ebikes. This was within legal limits since they wouldn't exceed 20mph, unless... you left the public roads and removed the limiter. I got as crazy as building a bike that outputted more than 12,000 watts of power.
+                
+                I still curse Alibaba for showing me those ebikes, but it led me on an interesting route where I learned a good deal about electrical and mechanical engineering while working on these bikes in my basement. I even learned welding, which was quite a contrast from my usual days spent coding at a clean desk, now attempting to weld two pieces of metal together while getting sunburned.
+                
+                I still use my bike occasionally for long distances to save time and would definitely consider getting into making electric vehicles as a hobby, or maybe even as a software developer in the future.</p>
+                
+             </div> 
+             <div>
+                <i class="fa-solid fa-golf-ball-tee"></i>
+                <h2>Golf</h2>
+                <div class="golfvid">
+                    <video src="images/golf.mp4" loop autoplay muted></video>
+                </div>
+                <p style="font-size: 16px;">I lost my mind in this game. As someone who has practiced MMA extensively, I can currently attest that it is much easier to land a blow on an opponent than it is to consistently hit a golf ball. The intricacies of golf bear a striking resemblance to the challenges of coding. In both endeavors, mastery comes through relentless practice and meticulous attention to detail.
+
+                    In the realm of coding, every line of code written demands precision; a single misplaced character can lead to errors, much like a slight miscalculation in a golf swing resulting in a wayward shot. The process of coding mirrors the iterative nature of golf; just as a golfer refines their swing through countless repetitions, a coder hones their skills through continuous refinement of their codebase.
+                    
+                    Despite the frustrations and setbacks, both coding and golf offer a sense of fulfillment and satisfaction. Each successful line of code or well-executed shot on the course serves as a testament to the perseverance and dedication required to excel in these pursuits.
+                    
+                    I've reached a level of proficiency with my $20 driver from Goodwill, hitting it 320 yards, which is considered elite in the golfing world. Now, I'm striving for a similar level of mastery in coding, aiming to showcase my skills through innovative projects and solutions.</p>
+                    
+                    
+
+            </div>
+            
+            <div>
+                <i class="fa-solid fa-dumbbell"></i>
+                <h2>Workout</h2>
+                <div class="gymvid">
+                    <video src="images/gym.mp4" loop autoplay muted></video>
+                </div>
+                <p style="font-size: 16px;">This one is the most special. I was an athlete for a long time, but with time I realized that if I wanted to go all-in in the sport, I would need to sacrifice my health and basically my life for it in order to be the best at it. That's what happened to me in MMA. I was on my way to have my first amateur fight, but was badly injured during training—a specific illegal knee to the face. The fight was canceled, and it was finals week as well. I noticed a slight decrease in my cognitive functions; I would forget simple things on exams and have a hard time going over the code while holding different recursive calls in my head.
+
+                    While recovering and finishing my first year at Northeastern, I understood that it's not a good path to take because being an MMA fighter and a software developer will not work well together. Losing too many brain cells will not support my true passion for coding in any way. But it taught me the unbreakable discipline that I apply when I'm too tired to code. I would still sit and do it because once I would get up and go to the gym. The only way to win was through repetition and consistency.
+                    
+                    So yeah, now, I just work out every morning exactly at 6 am because I like the progress and consistency that it gives me.</p>
+                    
+                    
+                    
+                    
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 
 
 <!---------------------contact------------------>
