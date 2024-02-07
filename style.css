@@ -493,6 +493,18 @@ display: none;
 }
 
 @media only screen and (max-width: 600px){
+     .bikepic1 img {
+          width: 100%; /* Ensure the video fills the width of its container */
+          height: auto; /* Maintain aspect ratio */
+      }
+       .gymvid video {
+          width: 100%; /* Ensure the video fills the width of its container */
+          height: auto; /* Maintain aspect ratio */
+      }
+       .golfvid video {
+          width: 100%; /* Ensure the video fills the width of its container */
+          height: auto; /* Maintain aspect ratio */
+      }
 #header{
     background-image: url(images/phone-background.png);
 }
