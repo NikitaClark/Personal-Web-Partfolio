@@ -22,7 +22,7 @@ body{
 
 }
 .container{
-padding: 10px 10%;
+padding: 10px 7%;
 }
 
 nav{ 
@@ -316,6 +316,7 @@ background: #ff004f;
 } 
 
 
+
 /*-------------experiances----------- */
 #experiances{
 padding: 50px 0;
@@ -323,14 +324,33 @@ padding: 50px 0;
 .row{
   margin-top: 50px;
 }
-.pic{
+.pic1{
+  border-radius: 5px; 
+  flex-basis: 45%; 
+  transition: transform 0.5s;
+  
+}
+.pic2{
+  border-radius: 5px; 
+  flex-basis: 45%; 
+  transition: transform 0.5s;
+  
+}
+.pic3{
   border-radius: 5px; 
   flex-basis: 45%; 
   transition: transform 0.5s;
   
 }
 
-.pic:hover {
+.pic1:hover {
+  transform: scale(1.05);
+}
+
+.pic2:hover {
+  transform: scale(1.05);
+}
+.pic3:hover {
   transform: scale(1.05);
 }
 
@@ -338,6 +358,63 @@ padding: 50px 0;
   flex-basis: 55%;
   font-size: 20px;
 }
+
+/* ----------------hobbies------------- */
+#hobbies{
+  padding: 30px 0;
+  }
+  .hobbies-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  }
+  .hobbies-list div{
+  background: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+  }
+  .hobbies-list div i{
+  font-size: 50px;
+  margin-bottom: 30px;
+  }
+  .hobbies-list div h2{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  }
+  .hobbies-list div a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+  }
+  .hobbies-list div:hover{
+  background: #ff004f;
+  transform: translateY(-10px);
+  }
+
+.bikepic1 img{
+  width: auto;
+  height: 470px;
+}
+
+.golfvid video {
+  width: auto;
+  height: 470px;
+}
+
+.gymvid video {
+  width: auto;
+  height: 470px;
+}
+
+
+  
 
 
 /* ---------contact-------- */
